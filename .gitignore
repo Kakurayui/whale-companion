@@ -1,0 +1,38 @@
+# Credentials and local overrides (the empty template is public).
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python and editor caches.
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Conversations, memory, settings, logs, model weights and downloads.
+/data/
+*.sqlite*
+*.db
+*.log
+/.runtime/
+/.work/
+/evaluation/results/
+*-conversation.json
+
+# Dependencies, bundles and source release archives.
+node_modules/
+/desktop/dist/
+/dist/
+
+# Locally downloaded surfpet art and derived images are not distributed.
+/desktop/skins/
+/desktop/icon.png
+/web/feiyu/pet.png
+/docs/*preview*.jpg
+

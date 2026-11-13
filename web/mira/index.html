@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Lantern & Leaf · A conversation with Mira</title>
+  <link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="character-panel">
+      <a class="wordmark" href="/" aria-label="Lantern and Leaf home"><span class="brand-mark" aria-hidden="true">✦</span><span>Lantern <i>&</i> Leaf<small>A LITTLE WORLD TO RETURN TO</small></span></a>
+      <div class="portrait-wrap"><img src="/mira.svg" alt="Illustration of Mira, wearing a green apron in her alchemy workshop"><span class="portrait-caption">BRINDLEWICK · EAST BRIDGE</span></div>
+      <div class="character-copy"><span class="eyebrow">YOUR COMPANION</span><h1>Mira<span>the apprentice alchemist</span></h1><p>A curious mind, a cluttered workshop,<br>and a kettle that is always on.</p></div>
+      <div class="character-note"><span aria-hidden="true">❧</span><p>“A failed experiment is just a very<br>specific kind of discovery.”</p></div>
+      <div class="panel-footer"><span>LANTERN &amp; LEAF</span><span>PROTOTYPE 01</span></div>
+    </aside>
+    <main>
+      <header class="chat-header"><div><span class="eyebrow">THE LANTERN & LEAF WORKSHOP</span><h2>A moment with Mira</h2><p><span id="status-dot" class="status-dot"></span><span id="connection-status">Checking the connection…</span></p></div><button class="icon-button" id="settings-open" aria-label="Open model settings" title="Model settings">⚙</button></header>
+      <section class="toolbar" aria-label="Conversation controls"><div class="mode-control" role="group" aria-label="Conversation mode"><button id="mode-enhanced" class="mode active" aria-pressed="true">With memory & lore</button><button id="mode-baseline" class="mode" aria-pressed="false">Baseline</button></div><button class="text-button" id="new-chat">＋ New conversation</button></section>
+      <div id="connection-banner" class="connection-banner" hidden><span>Connect DeepSeek to bring Mira to life.</span><button id="connect-banner" class="text-button">Connect model →</button></div>
+      <div id="mode-note" class="mode-note">Mira can draw on her world and remember the details you share.</div>
+      <section id="messages" class="messages" role="log" aria-live="polite" aria-label="Conversation"></section>
+      <div id="suggestions" class="suggestions" aria-label="Conversation starters"></div>
+      <div id="error" class="error-message" role="alert" hidden></div>
+      <form id="chat-form" class="composer"><label class="sr-only" for="message-input">Your message to Mira</label><textarea id="message-input" maxlength="2000" rows="2" placeholder="Pull up a chair. What’s on your mind?" required></textarea><button id="send" type="submit" class="send-button" aria-label="Send message">↑</button></form>
+      <div class="composer-footer"><span>Enter to send · Shift + Enter for a new line</span><span>Fictional character · AI-generated replies</span></div>
+    </main>
+    <aside class="notebook">
+      <div class="notebook-heading"><span class="eyebrow">THE NOTEBOOK</span><h2>Little things,<br>remembered.</h2><p>Details Mira can carry into your<br>next conversation.</p></div>
+      <div id="memory-empty" class="empty-memory"><span aria-hidden="true">✧</span><p>A fresh page.</p><small>Tell Mira your name, a preference,<br>or something you’re working toward.</small></div>
+      <dl id="memory-list"></dl>
+      <button id="memory-edit" class="outline-button">Edit remembered details</button>
+      <details class="research"><summary>Behind the conversation</summary><p>Compare a basic character prompt with the same model using retrieved lore and saved memory.</p><dl><dt>Mode</dt><dd id="research-mode">Enhanced</dd><dt>Model</dt><dd id="research-model">—</dd><dt>Response time</dt><dd id="research-latency">—</dd><dt>World notes retrieved</dt><dd id="research-lore">No reply yet</dd></dl><button id="export" class="text-button">Export this conversation ↓</button></details>
+      <div class="notebook-bottom"><p>Saved on this computer. With DeepSeek,<br>chat context is sent to its API.</p><button id="forget" class="text-button muted">Forget me & clear conversations</button></div>
+    </aside>
+  </div>
+  <dialog id="settings-dialog"><form id="settings-form"><button type="button" class="dialog-close" data-close="settings-dialog" aria-label="Close settings">×</button><span class="eyebrow">MODEL SETTINGS</span><h2>Bring Mira to life.</h2><p>Connect your DeepSeek account. Your key is saved in this project’s local .env file and is never included in conversation exports.</p><label for="api-key">DeepSeek API key</label><input id="api-key" type="password" autocomplete="off" placeholder="Enter your API key" required minlength="10"><label for="model">Model</label><select id="model"><option value="deepseek-flash">DeepSeek Flash</option><option value="deepseek-v4-pro">DeepSeek V4 Pro</option></select><p class="small">Messages, relevant lore, and remembered details are sent to DeepSeek when you chat. API usage is billed to your account.</p><p id="settings-status" role="status"></p><button class="primary-button" id="connect-submit" type="submit">Connect DeepSeek</button><a class="external-link" href="https://platform.deepseek.com/api_keys" target="_blank" rel="noreferrer">Get a key from DeepSeek ↗</a></form></dialog>
+  <dialog id="memory-dialog"><form id="memory-form"><button type="button" class="dialog-close" data-close="memory-dialog" aria-label="Close memory editor">×</button><span class="eyebrow">MIRA’S NOTEBOOK</span><h2>What should I remember?</h2><p>These details persist across new conversations in enhanced mode. Leave a field empty to remove it.</p><label for="memory-name">Your name</label><input id="memory-name" maxlength="160"><label for="memory-preference">A preference</label><input id="memory-preference" maxlength="160" placeholder="For example, jasmine tea"><label for="memory-goal">Something you’re working toward</label><input id="memory-goal" maxlength="160"><button class="primary-button" type="submit">Save details</button></form></dialog>
+</body>
+</html>

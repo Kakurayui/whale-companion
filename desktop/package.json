@@ -1,0 +1,13 @@
+{
+  "name": "whale-companion",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local AI desktop companion with character memory",
+  "main": "main.cjs",
+  "scripts": {
+    "build": "esbuild ./renderer.ts --bundle --outfile=dist/renderer.js --platform=browser --target=chrome142 --tsconfig=tsconfig.json",
+    "start": "electron ."
+  },
+  "dependencies": { "pixi.js": "8.22.0" },
+  "devDependencies": { "electron": "45.0.0", "esbuild": "0.28.2" }
+}

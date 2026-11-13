@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 350" role="img" aria-labelledby="title desc">
+<title id="title">Mira in the Lantern and Leaf workshop</title><desc id="desc">An original flat illustration of an auburn-haired apprentice alchemist with a green apron, holding a glowing blue herb jar.</desc>
+<defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#cddac1"/><stop offset="1" stop-color="#9daa84"/></linearGradient><linearGradient id="coat" x2="1" y2="1"><stop stop-color="#526b47"/><stop offset="1" stop-color="#354c34"/></linearGradient><radialGradient id="glow"><stop stop-color="#b8e3db" stop-opacity=".8"/><stop offset="1" stop-color="#b8e3db" stop-opacity="0"/></radialGradient></defs>
+<path fill="url(#bg)" d="M0 0h280v350H0z"/><circle cx="139" cy="112" r="94" fill="#e6e7ce" opacity=".65"/>
+<path d="M21 0v241M259 0v241M19 63h242M19 148h242" fill="none" stroke="#758566" stroke-width="7" opacity=".35"/>
+<path d="M139 0v94M54 229V108M225 231V112" stroke="#899875" stroke-width="3" opacity=".45"/>
+<path d="M3 249q31-35 57-11l15 47H0M245 245q22-31 43-12v65h-48" fill="#7a8e65"/>
+<g fill="#536d4c"><path d="M30 254Q4 191 21 160q28 30 9 94M31 224q-3-41 26-52 2 36-26 52M248 253q-10-59 15-89 17 40-15 89M247 225q-35-15-24-47 27 13 24 47"/></g>
+<path d="M13 255h47l-6 56H20zM229 256h41l-7 52h-28z" fill="#a77d59"/>
+<path d="M69 184q-13-75 25-101 48-36 83 0 39 28 28 109l-13 35H83z" fill="#72543d"/>
+<path d="M71 350v-74q2-63 53-70h38q53 7 53 70v74" fill="#ede4c8"/>
+<path d="M108 213l-20 54v83h109v-84l-22-53-13 29h-41z" fill="url(#coat)"/>
+<path d="M126 185h31v35q-15 15-31 0z" fill="#ddb58d"/>
+<ellipse cx="142" cy="145" rx="46" ry="57" fill="#edc7a0"/>
+<path d="M94 148q-8-63 48-68 49 0 49 63-25-6-35-35-15 32-62 40" fill="#7d5b40"/>
+<path d="M103 121q29-5 42-28M158 95q9 28 25 36" fill="none" stroke="#9e7752" stroke-width="5" stroke-linecap="round"/>
+<path d="M112 149q7-5 14-1M155 148q8-5 15 1" fill="none" stroke="#675038" stroke-width="2.5" stroke-linecap="round"/>
+<ellipse cx="120" cy="154" rx="3" ry="4" fill="#3d4a37"/><ellipse cx="163" cy="154" rx="3" ry="4" fill="#3d4a37"/>
+<path d="M141 155l-3 12 5 1M132 179q10 7 20-1" fill="none" stroke="#b78368" stroke-width="2" stroke-linecap="round"/>
+<ellipse cx="111" cy="169" rx="9" ry="4" fill="#d8997e" opacity=".5"/><ellipse cx="171" cy="169" rx="9" ry="4" fill="#d8997e" opacity=".5"/>
+<g fill="#b18a65"><circle cx="111" cy="164" r="1"/><circle cx="118" cy="166" r="1"/><circle cx="165" cy="166" r="1"/><circle cx="172" cy="164" r="1"/></g>
+<path d="M180 131q-2 67 13 87-22 9-28-4 15-41 15-83" fill="#72543d"/>
+<path d="M177 133q4-11 17-10-1 13-17 10" fill="#7d956a"/><path d="M179 130q-7-9-4-17 12 6 4 17" fill="#9aae81"/>
+<path d="M78 273q-10 23 9 35l43 7 8-17-35-12M207 270q14 27-8 40l-39 7-7-18 32-12" fill="#e6d8b8"/>
+<path d="M124 299q14-11 24 4l-8 17-19-7M162 300q-12-7-17 9l12 14 16-12" fill="#eac099"/>
+<circle cx="144" cy="280" r="48" fill="url(#glow)"/>
+<path d="M128 264h30v14l8 9v28q-22 11-44 0v-28l6-9z" fill="#aad3c6" stroke="#547d6d" stroke-width="2"/>
+<path d="M127 264h32v9h-32z" fill="#a68c5b"/>
+<path d="M131 290q14-6 26 0v20q-12 8-26 0z" fill="#d2e8da" opacity=".8"/>
+<path d="M142 307v-25m0 14q-14-1-12-10 11 0 12 10m0 4q12-3 12-12-12 2-12 12" fill="#739e83" stroke="#537d63" stroke-width="1.5"/>
+<g fill="#eef2ca"><path d="M61 102l2 5 5 2-5 2-2 5-2-5-5-2 5-2zM219 81l2 4 4 2-4 2-2 4-2-4-4-2 4-2z"/><circle cx="205" cy="232" r="2"/><circle cx="72" cy="195" r="2"/></g>
+<path d="M0 326h280v24H0z" fill="#586844" opacity=".7"/>
+</svg>
